@@ -8,7 +8,5 @@ cd ../../../../
 module=app/code/Firebear/ImportExport
 codesniffer=$module/dev/codesniffer
 
-vendor/bin/phpcs -p --standard=$codesniffer/ruleset.xml $module
-if [ -f $codesniffer/ruleset_addon.xml ]; then
-    vendor/bin/phpcs -p --standard=$codesniffer/ruleset_addon.xml $module
-fi
+vendor/bin/phpcs -p --standard=$codesniffer/ruleset.xml $module &&
+vendor/bin/phpcs -p --standard=$codesniffer/ruleset_addon.xml $module
