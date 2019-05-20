@@ -1,6 +1,6 @@
 #!/usr/bin/zsh
 
-for i in $@ do
+for i in $@; do
     cd /var/www/testing/$i/app/code/Firebear/ImportExport/
     git pull
     cd ../../../../
