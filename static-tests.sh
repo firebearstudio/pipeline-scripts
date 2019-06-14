@@ -7,4 +7,4 @@ cd ../../../../
 
 bin/magento setup:upgrade &&
 bin/magento setup:di:compile &&
-vendor/bin/phpstan analyse --no-progress app/code/Firebear/ImportExport
+vendor/bin/phpstan analyse --no-progress -c /home/owner/scripts/phpstan.neon app/code/Firebear/ImportExport
