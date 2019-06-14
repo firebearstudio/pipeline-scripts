@@ -1,0 +1,9 @@
+parameters:
+	level: 0
+	ignoreErrors: 
+		- "#RestClient#"
+		- "#ClientPrestashopApi#"
+		- "#[Class|class|type] Wyomind#"
+		- "#[Class|type] MageArray#"
+		- "#Class Webkul#"
+		- "#Class Magestore#"
