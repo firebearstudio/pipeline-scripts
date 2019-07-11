@@ -5,5 +5,7 @@ for i in $@; do
     git pull
     cd ../../../../
     bin/magento s:up &&
-    bin/magento s:s:d -f
+    bin/magento s:di:c &&
+    bin/magento s:s:d -f &&
+    bin/magento c:c
 done
