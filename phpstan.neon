@@ -6,4 +6,4 @@ parameters:
 		- "#[Class|class|type] Wyomind#"
 		- "#[Class|type] MageArray#"
 		- "#Class Webkul#"
-		- "#Class Magestore#"
+		- "#[Class|type] Magestore#"
