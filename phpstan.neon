@@ -5,5 +5,5 @@ parameters:
 		- "#ClientPrestashopApi#"
 		- "#[Class|class|type] Wyomind#"
 		- "#[Class|type] MageArray#"
-		- "#Class Webkul#"
-		- "#Class Magestore#"
+		- "#[Class|class|type] Webkul#"
+		- "#[Class|class|type] Magestore#"
