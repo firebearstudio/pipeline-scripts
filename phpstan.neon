@@ -7,3 +7,4 @@ parameters:
 		- "#[Class|type] MageArray#"
 		- "#Class Webkul#"
 		- "#[Class|type] Magestore#"
+                - '#Call to static method getObjectManager\(\) on an unknown class Magento\\TestFramework\\Helper\\Bootstrap.#'
