@@ -1,9 +1,10 @@
 parameters:
-	level: 0
-	ignoreErrors: 
-		- "#RestClient#"
-		- "#ClientPrestashopApi#"
-		- "#[Class|class|type] Wyomind#"
-		- "#[Class|type] MageArray#"
-		- "#Class Webkul#"
-		- "#[Class|type] Magestore#"
+        level: 0
+        reportUnmatchedIgnoredErrors: false
+        ignoreErrors:
+                - '#[Class\|class\|type] Wyomind#'
+                - '#[Class\|type] MageArray#'
+                - '#Class Webkul#'
+                - '#[Class\|type] Magestore#'
+                - '#Method Magento\\AdvancedPricingImportExport\\Model\\Import\\AdvancedPricing::__construct\(\) invoked with 15 parameters, 17 required.#'
+                - '#Call to static method getObjectManager\(\) on an unknown class Magento\\TestFramework\\Helper\\Bootstrap.#'
