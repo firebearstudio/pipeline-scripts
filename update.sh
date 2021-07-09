@@ -1,10 +1,14 @@
 #!/usr/bin/zsh
 
-for i in $@; do
-    cd /var/www/testing/$i
-    composer update "firebear/importexport"
-    bin/magento s:up &&
-    bin/magento s:di:c &&
-    bin/magento s:s:d -f &&
-    bin/magento c:c
-done
+set -e
+
+echo "Deploy start. Stand: $1. Branch: $2"
+
+cd /chroot/home/a0563af8/$1
+composer require "firebear/importexport:dev-$2"
+bin/magento ma:e &&
+bin/magento s:up &&
+bin/magento s:d:c &&
+bin/magento s:s:d -f &&
+bin/magento ma:d &&
+bin/magento c:c
